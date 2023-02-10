@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    overflow: hidden;
+
+    gap: 20px;
+    background-color: #212121;
+}
+
+.events-area {
+    width: 30%;
+    height: 100vh;
+    display: block;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+.event-card {
+    background-color: #505050;
+    padding: 1rem;
+    border-radius: 10px;
+    color: whitesmoke;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.event-create {
+    background-color: #505050;
+    padding: 1rem;
+    border-radius: 10px;
+    color: whitesmoke;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.event-card h1 {
+    font-family: "Roboto", sans-serif;
+}
+
+.event-card h3 {
+    font-family: "Poppins", sans-serif;
+}
+
+.main-area {
+    height: 100vh;
+
+    display: block;
+    justify-content: start;
+    align-items: center;
+
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.main-area table {
+    text-align: center;
+}
+
+.main-area table th {
+    background-color: rgb(58, 58, 58);
+    color: white;
+    border-radius: 5px;
+
+    font-family: "Roboto", sans-serif;
+}
+
+.main-area table td {
+    font-family: "Poppins", sans-serif;
+}
+
+.main-area table input, .main-area table th {
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+table tr td:first-child input{
+    cursor: pointer;
+}
+
+.table-heading{
+    position: sticky;
+    top:0px;
+    background-color: black;
+}
+
+.off{
+    background-color: red !important;
+    cursor: pointer;
+}
+
+.on{
+    background-color: goldenrod !important;
+    cursor: pointer;
+}

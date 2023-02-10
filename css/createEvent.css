@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #212121;
+    color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    gap: 20px;
+}
+
+.event-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-evenly;
+    gap: 1rem;
+
+    background-color: #707070;
+    padding: 2rem 4rem;
+    border-radius: 20px;
+}
+
+.event-form label {
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.event-form span,
+.event-form input {
+    font-size: clamp(0.8rem, 2vw, 1.4rem);
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem 0 1rem 3rem;
+}
+
+.choices li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width:100%;
+}
+
+li input:nth-child(2){
+    width:78%;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.submit-button input {
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: forestgreen;
+}
+
+.add {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 10px;
+    gap: 10px;
+}
+
+.add button {
+    padding: 8px 15px;
+    /* font-size: 15px; */
+    cursor: pointer;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    color: black;
+    background-color: whitesmoke;
+    font-size: clamp(0.8rem, 2vw, 1.4rem);
+    font-family: "Poppins", sans-serif;
+}
+
+.add button:hover {
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+
+/* .add .textbox-btn {
+    background-color: red;
+}
+
+.add .checkbox-btn {
+    background-color: blue;
+}
+
+.add .radio-btn {
+    background-color: green;
+} */
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.add-btn {
+    font-size: 15px;
+    cursor: pointer;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-btn:hover {
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+
+.sub-btn {
+    font-size: 15px;
+    cursor: pointer;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orangered;
+}
+
+.sub-btn:hover {
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.switch-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap:10px;
+}
