@@ -23,7 +23,7 @@ const getFormData = () => {
 
     const submit = document.querySelector(".submit-button")
 
-    const logData = () => {
+    const logData = async () => {
         const textual = document.querySelectorAll(".textual");
         const textualValue = document.querySelectorAll(".name-field");
 
@@ -69,7 +69,7 @@ const getFormData = () => {
         }
 
         console.log(data);
-        postData(data);
+        await postData(data);
         data = {
             name: Event,
             text: [],
